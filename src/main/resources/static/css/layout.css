@@ -6,3 +6,37 @@
 :root {
     --grid-gap: 20px;
 }
+
+.container{
+ display: grid;
+    grid-gap: 15px 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 70% 150px;
+    margin: 2rem auto;
+    max-width: 1000px;
+    width: 90%;
+}
+
+
+.header{
+	display: grid;
+	grid-column-start: 1;
+	grid-column-end: 3; 
+	grid-gap: 15px 20px;
+}
+.footer{
+	grid-column-start: 1;
+	grid-column-end: 3; 
+}
+
+.main__content{
+	display:grid;
+	grid-template-rows: 170px 170px;
+	grid-gap: 20px;
+
+}
+.main__sidebar{
+		display:grid;
+	grid-template-rows: 170px 170px 170px;
+	grid-gap: 20px;
+}
